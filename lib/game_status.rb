@@ -14,3 +14,16 @@ WIN_COMBINATIONS = [
   [0,4,8], # Top to bottom diagonal
   [6,4,2]  # Bottom to top diagonal
 ]
+
+def won?(board)
+  WIN_COMBINATIONS.each do |combo|
+    spot_1 = board[combo[0]]
+    spot_2 = board[combo[1]]
+    spot_3 = board[combo[2]]
+
+    if (spot_1 == "X" && spot_2 == "X" && spot_3 == "X") || (spot_1 == "O" && spot_2 == "O" && spot_3 == "O")
+      return combo
+    else
+      false
+    end
+    
