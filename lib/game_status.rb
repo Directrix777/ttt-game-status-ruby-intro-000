@@ -23,8 +23,6 @@ def won?(board)
 
     if (spot_1 == "X" && spot_2 == "X" && spot_3 == "X") || (spot_1 == "O" && spot_2 == "O" && spot_3 == "O")
       return combo
-    else
-      false
     end
   end
   false
