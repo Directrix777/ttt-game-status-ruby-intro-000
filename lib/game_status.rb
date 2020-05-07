@@ -52,4 +52,3 @@ def over(board)
   end
   false
 end
-
