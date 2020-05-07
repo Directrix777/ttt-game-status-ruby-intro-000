@@ -31,7 +31,7 @@ end
 def full?(board)
   index = 0
   until index == 9
-    if !position_taken(board, index)
+    if !position_taken?(board, index)
       return false
     end
     index += 1
