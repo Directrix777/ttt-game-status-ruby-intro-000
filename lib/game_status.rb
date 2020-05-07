@@ -27,3 +27,14 @@ def won?(board)
   end
   false
 end
+
+def full?(board)
+  index = 0
+  until index == 9
+    if !position_taken(board, index)
+      return false
+    end
+    index += 1
+  end
+  true
+end
